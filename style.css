@@ -1,0 +1,65 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+#gameboard {
+  height: 420px;
+  width: 420px;
+  left: 50%;
+  top: 50%;
+  margin: -210px 0 0 -210px;
+  position: absolute;
+}
+
+#endMessage {
+  width: 420px;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  margin: 210px 0 0 -210px;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 25px;
+  color: #3a3939;
+}
+
+.boardRow {
+  float: left;
+  clear: both;
+}
+
+.pegContainer {
+  float: left;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: #9698cc;
+}
+
+.peg {
+  width: 64%;
+  height: 64%;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 18%;
+  margin-bottom: auto;
+}
+
+.occupiedPeg {
+  background: #b3dde0;
+}
+
+.emptyPeg {
+  background: #545f5f;
+}
+
+.occupiedPeg.selected {
+  box-shadow: 0px 0px 2px 3px #00f;
+}
+
+.validDest {
+  background: #50e929;
+}
